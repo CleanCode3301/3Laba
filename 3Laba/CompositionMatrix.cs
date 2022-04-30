@@ -28,7 +28,7 @@ namespace _3Laba
 			if (comboBox1.SelectedIndex == 0)
 			{
 
-				int result = Matrixx.Composition((int)numericUpDown1.Value, (int)numericUpDown4.Value, (int)numericUpDown2.Value, (int)numericUpDown3.Value);
+				int result = Matrixx.Composition((int)startRow.Value, (int)startCol.Value, (int)finishRow.Value, (int)finishCol.Value);
 				textBox1.Text = $"{result}";
 			}
 			else if (comboBox1.SelectedIndex == 1)

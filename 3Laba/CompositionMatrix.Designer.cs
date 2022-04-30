@@ -30,21 +30,21 @@
 		{
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.button1 = new System.Windows.Forms.Button();
-			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+			this.startRow = new System.Windows.Forms.NumericUpDown();
 			this.label1 = new System.Windows.Forms.Label();
-			this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+			this.startCol = new System.Windows.Forms.NumericUpDown();
 			this.label2 = new System.Windows.Forms.Label();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
-			this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+			this.finishCol = new System.Windows.Forms.NumericUpDown();
 			this.label4 = new System.Windows.Forms.Label();
-			this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+			this.finishRow = new System.Windows.Forms.NumericUpDown();
 			this.label5 = new System.Windows.Forms.Label();
 			this.answerLabel = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.startRow)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.startCol)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.finishCol)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.finishRow)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// comboBox1
@@ -70,13 +70,13 @@
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// numericUpDown1
+			// startRow
 			// 
-			this.numericUpDown1.Location = new System.Drawing.Point(111, 43);
-			this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(33, 20);
-			this.numericUpDown1.TabIndex = 2;
+			this.startRow.Location = new System.Drawing.Point(111, 43);
+			this.startRow.Margin = new System.Windows.Forms.Padding(2);
+			this.startRow.Name = "startRow";
+			this.startRow.Size = new System.Drawing.Size(33, 20);
+			this.startRow.TabIndex = 2;
 			// 
 			// label1
 			// 
@@ -85,17 +85,17 @@
 			this.label1.Location = new System.Drawing.Point(9, 43);
 			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(65, 17);
+			this.label1.Size = new System.Drawing.Size(64, 17);
 			this.label1.TabIndex = 3;
-			this.label1.Text = "StartFirst";
+			this.label1.Text = "Start row";
 			// 
-			// numericUpDown2
+			// startCol
 			// 
-			this.numericUpDown2.Location = new System.Drawing.Point(111, 83);
-			this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2);
-			this.numericUpDown2.Name = "numericUpDown2";
-			this.numericUpDown2.Size = new System.Drawing.Size(33, 20);
-			this.numericUpDown2.TabIndex = 4;
+			this.startCol.Location = new System.Drawing.Point(111, 83);
+			this.startCol.Margin = new System.Windows.Forms.Padding(2);
+			this.startCol.Name = "startCol";
+			this.startCol.Size = new System.Drawing.Size(33, 20);
+			this.startCol.TabIndex = 4;
 			// 
 			// label2
 			// 
@@ -104,9 +104,9 @@
 			this.label2.Location = new System.Drawing.Point(9, 82);
 			this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(72, 17);
+			this.label2.Size = new System.Drawing.Size(87, 17);
 			this.label2.TabIndex = 5;
-			this.label2.Text = "FinishFirst";
+			this.label2.Text = "Start column";
 			// 
 			// textBox1
 			// 
@@ -125,17 +125,17 @@
 			this.label3.Location = new System.Drawing.Point(9, 169);
 			this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(93, 17);
+			this.label3.Size = new System.Drawing.Size(94, 17);
 			this.label3.TabIndex = 10;
-			this.label3.Text = "FinishSecond";
+			this.label3.Text = "Finish column";
 			// 
-			// numericUpDown3
+			// finishCol
 			// 
-			this.numericUpDown3.Location = new System.Drawing.Point(111, 170);
-			this.numericUpDown3.Margin = new System.Windows.Forms.Padding(2);
-			this.numericUpDown3.Name = "numericUpDown3";
-			this.numericUpDown3.Size = new System.Drawing.Size(33, 20);
-			this.numericUpDown3.TabIndex = 9;
+			this.finishCol.Location = new System.Drawing.Point(111, 170);
+			this.finishCol.Margin = new System.Windows.Forms.Padding(2);
+			this.finishCol.Name = "finishCol";
+			this.finishCol.Size = new System.Drawing.Size(33, 20);
+			this.finishCol.TabIndex = 9;
 			// 
 			// label4
 			// 
@@ -144,17 +144,17 @@
 			this.label4.Location = new System.Drawing.Point(9, 125);
 			this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(86, 17);
+			this.label4.Size = new System.Drawing.Size(71, 17);
 			this.label4.TabIndex = 8;
-			this.label4.Text = "StartSecond";
+			this.label4.Text = "Finish row";
 			// 
-			// numericUpDown4
+			// finishRow
 			// 
-			this.numericUpDown4.Location = new System.Drawing.Point(111, 126);
-			this.numericUpDown4.Margin = new System.Windows.Forms.Padding(2);
-			this.numericUpDown4.Name = "numericUpDown4";
-			this.numericUpDown4.Size = new System.Drawing.Size(33, 20);
-			this.numericUpDown4.TabIndex = 7;
+			this.finishRow.Location = new System.Drawing.Point(111, 126);
+			this.finishRow.Margin = new System.Windows.Forms.Padding(2);
+			this.finishRow.Name = "finishRow";
+			this.finishRow.Size = new System.Drawing.Size(33, 20);
+			this.finishRow.TabIndex = 7;
 			// 
 			// label5
 			// 
@@ -185,23 +185,23 @@
 			this.Controls.Add(this.answerLabel);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label3);
-			this.Controls.Add(this.numericUpDown3);
+			this.Controls.Add(this.finishCol);
 			this.Controls.Add(this.label4);
-			this.Controls.Add(this.numericUpDown4);
+			this.Controls.Add(this.finishRow);
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.numericUpDown2);
+			this.Controls.Add(this.startCol);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.numericUpDown1);
+			this.Controls.Add(this.startRow);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.comboBox1);
 			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "CompositionMatrix";
 			this.Text = "Произведение";
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.startRow)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.startCol)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.finishCol)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.finishRow)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -213,10 +213,10 @@
 		public System.Windows.Forms.ComboBox comboBox1;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label4;
-		public System.Windows.Forms.NumericUpDown numericUpDown3;
-		public System.Windows.Forms.NumericUpDown numericUpDown4;
-		public System.Windows.Forms.NumericUpDown numericUpDown1;
-		public System.Windows.Forms.NumericUpDown numericUpDown2;
+		public System.Windows.Forms.NumericUpDown finishCol;
+		public System.Windows.Forms.NumericUpDown finishRow;
+		public System.Windows.Forms.NumericUpDown startRow;
+		public System.Windows.Forms.NumericUpDown startCol;
 		public System.Windows.Forms.TextBox textBox1;
 		public System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Label label5;
